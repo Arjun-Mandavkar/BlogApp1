@@ -1,12 +1,12 @@
-﻿using BlogApp1.Models.DTOs;
+﻿using BlogApp1.Models.RequestModels;
 using BlogApp1.Models.ResponseModels;
 
 namespace BlogApp1.Controllers
 {
     public interface IAuthController
     {
-        public Task<ApiResponse<AuthUserRM>> Register(RegisterUserDto dto);
-        public Task<ApiResponse<AuthUserRM>> Login(LoginUserDto dto);
-        public Task<ApiResponse> DeleteAccount(LoginUserDto dto);
+        public Task<ApiResponse<AuthUserRsM>> Register(RegisterUserReM userInfo);
+        public Task<ApiResponse<AuthUserRsM>> Login(LoginUserReM credentials);
+        public Task<ApiResponse> DeleteAccount(LoginUserReM credentials);
     }
 }

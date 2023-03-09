@@ -2,7 +2,7 @@
 
 namespace BlogApp1.Models.ResponseModels
 {
-    public class AuthUserRM
+    public class AuthUserRsM
     {
         public UserInfoDto? UserInfo { get; set; }
         public string Token { get; set; } = string.Empty;

@@ -1,6 +1,6 @@
-﻿namespace BlogApp1.Models.DTOs
+﻿namespace BlogApp1.Models.RequestModels
 {
-    public class RegisterUserDto
+    public class RegisterUserReM
     {
         public string Name { get; set; } = string.Empty;
         public string Email { get; set; } = string.Empty;
