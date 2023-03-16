@@ -11,5 +11,6 @@ namespace BlogApp1.Controllers
         public Task<ApiResponse<UserInfoDto>> Create(CreateUserReM userInfo);
         public Task<ApiResponse<UserInfoDto>> Update(UpdateUserReM userInfo);
         public Task<ApiResponse<UserInfoDto>> Delete(string Id);    //Id can be guid or email
+        public Task<ApiResponse> RolesAction(UserRolesReM info);    //Assign and revoke roles
     }
 }

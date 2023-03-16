@@ -14,5 +14,7 @@ namespace BlogApp1.Controllers
         public Task<ApiResponse<BlogDto>> Create(CreateBlogReM info);
         public Task<ApiResponse<BlogDto>> Update(UpdateBlogReM info);
         public Task<ApiResponse> Delete(string Id);
+        public Task<ApiResponse> RolesAction(BlogUserRolesReM info);    //Assign and revoke roles
+        public Task<ApiResponse<IEnumerable<BlogUserInfoDto>>> GetBlogUsers(string blogId);
     }
 }
