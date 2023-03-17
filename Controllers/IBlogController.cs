@@ -10,10 +10,10 @@ namespace BlogApp1.Controllers
     public interface IBlogController
     {
         public Task<ApiResponse<BlogsRsM>> GetPaginatedBlogs(GetAllBlogsReM info);
-        public Task<ApiResponse<BlogDto>> Get(string Id);
+        public Task<ApiResponse<BlogDto>> Get(string blogId);
         public Task<ApiResponse<BlogDto>> Create(CreateBlogReM info);
         public Task<ApiResponse<BlogDto>> Update(UpdateBlogReM info);
-        public Task<ApiResponse> Delete(string Id);
+        public Task<ApiResponse> Delete(string blogId);
         public Task<ApiResponse> RolesAction(BlogUserRolesReM info);    //Assign and revoke roles
         public Task<ApiResponse<IEnumerable<BlogUserInfoDto>>> GetBlogUsers(string blogId);
     }
