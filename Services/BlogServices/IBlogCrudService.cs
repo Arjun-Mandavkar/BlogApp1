@@ -1,5 +1,4 @@
-﻿using BlogApp1.Models.DTOs;
-using BlogApp1.Models.Enums;
+﻿using BlogApp1.Models.Enums;
 using BlogApp1.Models.ServiceModels;
 
 namespace BlogApp1.Services.BlogServices
